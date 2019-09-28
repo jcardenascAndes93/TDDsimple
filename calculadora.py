@@ -11,4 +11,4 @@ class Calculadora:
         if cadena == "":
             return 0
         else:
-            return 7
+            return int(cadena)
