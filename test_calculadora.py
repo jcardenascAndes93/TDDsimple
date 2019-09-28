@@ -36,6 +36,6 @@ class TestCalculadora(unittest.TestCase):
 
     def test_suma_numeros_diferentes_separadores(self):
         self.assertEqual(calculadora.Calculadora.suma(
-            "10:7"), 17, "caso con separador ':'")
+            "10: 7"), 17, "caso con separador ':'")
         self.assertEqual(calculadora.Calculadora.suma(
-            "20&5"), 17, "caso con separador '&'")
+            "20& 5"), 25, "caso con separador '&'")

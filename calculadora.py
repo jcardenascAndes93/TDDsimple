@@ -17,5 +17,21 @@ class Calculadora:
                 suma += int(n)
 
             return suma
+        elif '&' in cadena:
+            nums = cadena.split("&")
+            suma = 0
+            for n in nums:
+                suma += int(n)
+
+            return suma
+
+        elif ':' in cadena:
+            nums = cadena.split(":")
+            suma = 0
+            for n in nums:
+                suma += int(n)
+
+            return suma
+
         else:
             return int(cadena)
