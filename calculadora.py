@@ -11,6 +11,11 @@ class Calculadora:
         if cadena == "":
             return 0
         elif ',' in cadena:
-            return 4
+            nums = cadena.split(",")
+            suma = 0
+            for n in nums:
+                suma += int(n)
+
+            return suma
         else:
             return int(cadena)
