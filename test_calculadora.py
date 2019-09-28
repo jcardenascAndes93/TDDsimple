@@ -29,3 +29,7 @@ class TestCalculadora(unittest.TestCase):
             "7, 2"), 9, "caso dos números")
         self.assertEqual(calculadora.Calculadora.suma(
             "11, 5"), 16, "caso dos números")
+
+    def test_suma_varios_numeros(self):
+        self.assertEqual(calculadora.Calculadora.suma(
+            "1,2,3,10"), 16, "caso varios números")
